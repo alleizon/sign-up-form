@@ -76,3 +76,20 @@ button {
   margin: 0;
   box-sizing: border-box;
 }
+
+@font-face {
+    font-family: "japan";
+    src: url("fonts/japan-webfont.woff2") format("woff2"), url("fonts/japan-webfont.woff")
+        format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: "japanese";
+    src: url("fonts/japanese-webfont.woff2") format("woff2"), url("fonts/japanese-webfont.woff")
+        format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+
