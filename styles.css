@@ -105,11 +105,24 @@ a:visited {
 
 .container {
     display:flex;
+    height: 100vh;
+}
+
+.background, .form {
+    flex:1;
+}
+
+.background {
+    background-image: url(assets/jase-bloor-oCZHIa1D4EU-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-position: 30%;
 }
 
 .img-wrapper {
     position: relative;
     z-index: 0;
+    height: 100%;
 }
  
 .footer {
@@ -124,20 +137,18 @@ a:visited {
     font-size: 0.7rem;
 }
 
-img[src="assets/jase-bloor-oCZHIa1D4EU-unsplash.jpg"] {
-    width: 700px;
-    height: 700px;
-}
-
 .transparent-bg {
     position: absolute;
     height: calc(100% * 0.15);
     top: 20%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.329);
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.kyoto {
+.kyoto, .small-kyoto {
     font-family: japan;
     color:white;
     font-size: 2.5rem;
@@ -145,6 +156,13 @@ img[src="assets/jase-bloor-oCZHIa1D4EU-unsplash.jpg"] {
     display: flex;
     justify-content: center;
     align-items:center;
-    height: 100%;
     text-shadow: 0px 0px 15px var(--red-lighter);
+}
+
+i {
+    font-style: italic;
+}
+
+.info {
+    font-weight: 600;
 }
