@@ -31,16 +31,16 @@
             </div>
             <div class="form">
                 <h1>Let's do this!</h1>
-                <form action="" method="post">
+                <form action="" method="post" id="sign-up-form">
 
                     <div class="row">
                         <div class="label-input-wrapper">
                             <label for="first-name">First Name</label>
-                            <input type="text" name="first-name" id="first-name">
+                            <input type="text" name="first-name" id="first-name" required>
                         </div>
                         <div class="label-input-wrapper">
                             <label for="last-name">Last Name</label>
-                            <input type="text" name="last-name" id="last-name">
+                            <input type="text" name="last-name" id="last-name" required>
                         </div>
                     </div>
 
@@ -48,29 +48,32 @@
                     <div class="row">
                         <div class="label-input-wrapper">
                             <label for="email">Email</label>
-                            <input type="email" name="email" id="email">
+                            <input type="email" name="email" id="email" required>
                         </div>
                         <div class="label-input-wrapper">
                             <label for="phone-number">Phone Number</label>
-                            <input type="tel" name="phone-number" id="phone-number">
+                            <input type="tel" name="phone-number" id="phone-number" required>
                         </div>
                     </div>
 
                     <div class="row">
                         <div class="label-input-wrapper">
                             <label for="pwd">Password</label>
-                            <input type="password" name="password" id="pwd">
+                            <input type="password" name="password" id="pwd" required>
                         </div>
                         
                         <div class="label-input-wrapper">
                             <label for="pwd-confirm">Confirm Password</label>
-                            <input type="password" name="confirm-password" id="pwd-confirm">
+                            <input type="password" name="confirm-password" id="pwd-confirm" required>
                         </div>
                     </div>
 
                 </form>
             </div>
-            <div class="sign-up"></div>
+            <div class="sign-up">
+                <button type="submit" form="sign-up-form">Create Account</button>
+                <p>Already have an account? <span class="log-in"><a href="">Log in</a></span></p>
+            </div>
         </div>
     </main>
 </body>

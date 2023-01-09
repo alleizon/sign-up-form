@@ -114,11 +114,12 @@ a:visited {
     flex:2;
     background-color: #000b21;
     box-shadow: -2px -2px 10px black;
-    color: var(--red-lighter);
+    color: white;
     display:flex;
     flex-direction: column;
     padding: 2rem;
     gap: 2rem;
+    font-weight: 600;
 }
 
 .background {
@@ -178,7 +179,6 @@ i {
 }
 
 .info {
-    font-weight: 600;
     display:flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -197,6 +197,7 @@ form {
     display:flex;
     flex-direction: column;
     flex-wrap: wrap;
+    justify-content: space-around;
     gap: 40px;
 }
 
@@ -211,5 +212,49 @@ form {
     display:flex;
     flex-direction: column;
     flex:1;
+    gap: 5px
+}
+
+.sign-up {
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+button {
+    padding: 6px 22px;
+    border-radius: 10px;
+    background-color: var(--red-lighter);
+    border-width: 0px;
+    border-color: transparent;
+    font-weight: 600;
+    color: white;
+}
+
+button:hover {
+    cursor: pointer;
+    color:#ff2369;
+    background-color: white;
+    transition: all 0.3s;
+}
+
+.log-in a {
+    color: var(--red-lighter);
+    text-decoration: none;
+}
+
+.log-in a:hover {
+    text-decoration: underline;
+}
+
+.form h1 {
+    font-size: 1.5rem;
+    color:#ff2369;
+}
+
+label {
+    text-transform: uppercase;
+    font-size: 0.8rem;
 }
 
