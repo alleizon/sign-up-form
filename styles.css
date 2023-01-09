@@ -256,5 +256,26 @@ button:hover {
 label {
     text-transform: uppercase;
     font-size: 0.8rem;
+    color: #d6a4a4;
 }
 
+input {
+    border: 0px solid transparent;
+    border-radius: 5px;
+    height: 30px;
+    padding: 0 5px;
+}
+
+input:focus {
+    border: none;
+    box-shadow: 2px 2px 5px rgb(0, 0, 0);
+    outline: none;
+  }
+  
+input:invalid:focus {
+    border: 2px solid rgb(202, 40, 40);
+}
+
+input:valid:focus {
+    border: 2px solid rgb(36, 218, 36);
+}
