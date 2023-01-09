@@ -190,6 +190,8 @@ i {
     flex-direction: column;
     gap: 20px;
     flex:2;
+    border-top: 2px solid var(--red-lighter);
+    border-bottom: 2px solid var(--red-lighter);
 }
 
 form {
@@ -251,6 +253,7 @@ button:hover {
 .form h1 {
     font-size: 1.5rem;
     color:#ff2369;
+    margin-top: 10px;
 }
 
 label {
