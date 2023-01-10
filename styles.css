@@ -125,7 +125,6 @@ a:visited {
 .background {
     background-image: url(assets/jase-bloor-oCZHIa1D4EU-unsplash.jpg);
     background-size: cover;
-    background-position: center;
     background-position: 30%;
 }
 
@@ -226,12 +225,13 @@ form {
 
 button {
     padding: 6px 22px;
-    border-radius: 10px;
+    border-radius: 16px;
     background-color: var(--red-lighter);
     border-width: 0px;
     border-color: transparent;
     font-weight: 600;
     color: white;
+    height:40px;
 }
 
 button:hover {
@@ -267,6 +267,7 @@ input {
     border-radius: 5px;
     height: 30px;
     padding: 0 5px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 input:focus {
