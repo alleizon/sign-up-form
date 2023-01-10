@@ -191,6 +191,7 @@ i {
     flex:2;
     border-top: 2px solid var(--red-lighter);
     border-bottom: 2px solid var(--red-lighter);
+    padding: 10px 0;
 }
 
 form {
@@ -223,7 +224,7 @@ form {
     gap: 10px;
 }
 
-button {
+.sign-up button {
     padding: 6px 22px;
     border-radius: 16px;
     background-color: var(--red-lighter);
@@ -234,7 +235,7 @@ button {
     height:40px;
 }
 
-button:hover {
+.sign-up button:hover {
     cursor: pointer;
     color:#ff2369;
     background-color: white;
@@ -253,7 +254,6 @@ button:hover {
 .form h1 {
     font-size: 1.5rem;
     color:#ff2369;
-    margin-top: 10px;
 }
 
 label {
@@ -268,6 +268,9 @@ input {
     height: 30px;
     padding: 0 5px;
     font-family: Arial, Helvetica, sans-serif;
+
+    --invalid-color: rgb(202, 40, 40);
+    --valid-color: rgb(36, 218, 36);
 }
 
 input:focus {
@@ -277,9 +280,92 @@ input:focus {
   }
   
 input:invalid:focus {
-    border: 2px solid rgb(202, 40, 40);
+    border: 2px solid var(--invalid-color);
 }
 
 input:valid:focus {
-    border: 2px solid rgb(36, 218, 36);
+    border: 2px solid var(--valid-color);
+}
+
+.row:nth-child(3) > div:nth-child(1) {
+    position: relative;
+}
+
+.row:nth-child(3) > div:nth-child(1)::after {
+    content: "The passwords don't match!";
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    right: 0;
+    font-size: 0.8rem;
+    padding-left: 2px;
+    color: rgb(255, 35, 35);
+    visibility: var(--pw-alert);
+}
+
+.pw-info {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 110%;
+    width: 200px;
+    height: 250px;
+    background-color: #001d58;
+    box-shadow: 2px 2px 5px black, -2px -2px 5px black;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: 400;
+    color: #d6a4a4;
+}
+
+.pw-info h2 {
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+ul {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex:1;
+}
+
+.modal-header {
+    display:flex;
+    justify-content: space-between;
+}
+
+.close-btn {
+    width:20px;
+    height:20px;
+    background-color: transparent;
+    border: 1px solid white;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    color:white;
+    border-radius: 100%;
+    font-size: 0.8rem;
+}
+
+.close-btn:hover {
+    background-color: white;
+    color:black;
+    border: 1px solid black;
+}
+
+#pwd-confirm {
+    --confirm-pw-color: var(--invalid-color);
+}
+
+#pwd {
+    --regex-match-color: var(--invalid-color);
+}
+
+#pwd-confirm:focus {
+    border: 2px solid var(--confirm-pw-color);
+}
+
+#pwd:focus {
+    border: 2px solid var(--regex-match-color);
 }

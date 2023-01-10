@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script src="main.js" defer></script>
     <title>Sign-up Form</title>
 </head>
 <body>
@@ -59,7 +60,21 @@
                     <div class="row">
                         <div class="label-input-wrapper">
                             <label for="pwd">Password <strong>*</strong></label>
-                            <input type="password" name="password" id="pwd" required autocomplete="off">
+                            <input type="password" name="password" id="pwd" autocomplete="off">
+                            <div class="pw-info">
+                                <div class="modal-header">
+                                    <h2>Password must contain:</h2>
+                                    <button type="button" class="close-btn">&#10006;</button>
+                                </div>
+                                <ul>
+                                    <li>- at least 8 characters</li>
+                                    <li>- at most 16 characters</li>
+                                    <li>- at least 1 lowercase character (a-z)</li>
+                                    <li>- at least 1 uppercase character (A-Z)</li>
+                                    <li>- at least 1 number (0-9)</li>
+                                    <li>- at least 1 symbol (`,~,!,@,#,$,... etc)</li>
+                                </ul>
+                            </div>
                         </div>
                         
                         <div class="label-input-wrapper">
@@ -78,3 +93,4 @@
     </main>
 </body>
 </html>
+
